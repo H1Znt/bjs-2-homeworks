@@ -19,6 +19,10 @@ function solveEquation(a, b, c) {
   return arr;
 }
 
-function calculateTotalMortgage(percent, contribution, amount, countMonths) {}
-
-console.log(solveEquation(4, 9, 2));
+function calculateTotalMortgage(percent, contribution, amount, countMonths) {
+  let percentMonth = percent / 100 / 12;
+  let creditBody = amount - contribution;
+  let payment = creditBody * (percentMonth + (percentMonth / ((Math.pow(1 + percentMonth, countMonths))-1)));
+  let totalAmount = payment * countMonths;
+  return +totalAmount.toFixed(2);
+}
