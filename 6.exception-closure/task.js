@@ -19,9 +19,9 @@ class Triangle {
     this.b = b;
     this.c = c;
     if (
-      this.a + this.b < this.c ||
-      this.a + this.c < this.b ||
-      this.b + this.c < this.a
+      a + b < c ||
+      a + c < b ||
+      b + c < a
     ) {
       throw new Error("Треугольник с такими сторонами не существует");
     }
