@@ -120,18 +120,3 @@ class Student {
   }
   
 }
-
-const student = new Student("Олег Никифоров");
-student.addMark(5, "химия");
-student.addMark(5, "химия");
-student.addMark(5, "физика");
-student.addMark(4, "физика");
-student.addMark(6, "физика");
-student.addMark(1, "физика");
-
-
-console.log(student.getAverageBySubject("физика")); //4.5
-console.log(student.getAverageBySubject("биология")); //0
-console.log(student.getAverage()); // Средний балл по всем предметам 4.75
-
-console.log(student)
